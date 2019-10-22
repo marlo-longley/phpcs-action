@@ -13,7 +13,7 @@ LABEL repository="https://github.com/marlo-longley/phpcs-action"
 LABEL homepage="https://github.com/marlo-longley/phpcs-action"
 LABEL maintainer="Marlo Longley <marlo@codeandcursor.com>"
 
-RUN apt-get update && apt-get -y install zip unzip wget git
+RUN apt-get update && apt-get -y install zip unzip git
 
 # Install composer using latest signature
 # See https://getcomposer.org/doc/faqs/how-to-install-composer-programmatically.md
