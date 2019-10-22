@@ -1,0 +1,9 @@
+name: "Drupal Coder + PHPCS"
+author: "Marlo Longley <marlo@codeandcursor.com>"
+description: "Runs Drupal code quality tools with PHPCS on pull requests."
+branding:
+  icon: 'droplet'
+  color: 'purple'
+runs:
+  using: 'Docker'
+  image: 'Dockerfile'
