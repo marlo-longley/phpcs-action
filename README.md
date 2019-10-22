@@ -7,7 +7,9 @@ You can use it as a Github Action like this:
 .github/workflows/phpcs.yml
 
 name: Drupal Coder + PHPCS
-# This workflow is triggered on pull requests to the repository.
+### This workflow is triggered on pull requests to the repository.
+
+```
 on: [pull_request]
 jobs:
   build:
@@ -19,3 +21,4 @@ jobs:
       - name: Drupal Coder + PHPCS
         uses: marlo-longley/phpcs-action@master
         id: phpcs
+```
