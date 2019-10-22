@@ -5,11 +5,8 @@ Usage
 You can use it as a Github Action like this:
 
 .github/workflows/phpcs.yml
-
-name: Drupal Coder + PHPCS
-### This workflow is triggered on pull requests to the repository.
-
 ```
+name: Drupal Coder + PHPCS
 on: [pull_request]
 jobs:
   build:
