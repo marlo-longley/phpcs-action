@@ -4,13 +4,18 @@ GitHub Action
 Usage
 You can use it as a Github Action like this:
 
-.github/main.workflow
+.github/workflows/phpcs.yml
 
-workflow "PHP Linting" {
-  resolves = ["Execute"]
-  on = "pull_request"
-}
-
-action "Execute" {
-  uses = "marlo-longley/phpcs-action@master"
-}
+name: Drupal Coder + PHPCS
+# This workflow is triggered on pull requests to the repository.
+on: [pull_request]
+jobs:
+  build:
+    # Job name is PHPCS
+    name: PHPCS
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: Drupal Coder + PHPCS
+        uses: marlo-longley/phpcs-action@master
+        id: phpcs
